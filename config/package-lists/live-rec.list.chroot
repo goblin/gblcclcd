@@ -1,0 +1,12 @@
+live-tools
+rsync
+uuid-runtime
+locales
+sudo
+user-setup
+at-spi2-core
+libdbuskit0
+lxsession
+policykit-1
+dconf-service
+dbus-x11

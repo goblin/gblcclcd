@@ -1,0 +1,22 @@
+#! /bin/bash
+
+set -e
+
+mkdir -p /usr/local/share/mew
+cd /usr/local/share/mew
+
+MEW_VERSION="v3.10.2.9"
+
+wget https://github.com/kvhnuke/etherwallet/releases/download/"$MEW_VERSION"/etherwallet-"$MEW_VERSION".zip
+unzip etherwallet-"$MEW_VERSION".zip
+rm etherwallet-"$MEW_VERSION".zip
+
+cat <<EOS > /usr/share/applications/my-ether-wallet.desktop
+[Desktop Entry]
+Name=MyEtherWallet
+Exec=/usr/bin/firefox /usr/local/share/mew/etherwallet-$MEW_VERSION/index.html
+Terminal=false
+Type=Application
+Icon=/usr/local/share/mew/images/icons/icon128.png
+StartupNotify=true
+EOS

@@ -1,0 +1,16 @@
+#! /bin/bash
+
+MEM=$[ $1 * 1024 ]
+
+while true
+do
+	treasure_goblin --pbkdf2-iters=2097152 \
+		--scrypt-opslimit=104857600 --scrypt-memlimit=$MEM \
+		--argon2-parallel=4 --argon2-iters=4 --argon2-mem=$MEM
+	echo press Enter to restart treasure_goblin...
+	if ! read
+	then
+		exit
+	fi
+	clear
+done

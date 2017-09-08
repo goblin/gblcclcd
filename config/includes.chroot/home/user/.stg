@@ -1,0 +1,6 @@
+#! /bin/bash
+
+TOT_MEM=$(free -g | grep '^Mem:' | sed -e 's/^Mem: *\([0-9]*\) .*$/\1/')
+REQD_MEM=$[ $TOT_MEM - 1]
+
+exec rxvt -geometry 80x25+64+0 -title "${REQD_MEM}GiB Treasure Goblin (system-specific)" -e /home/user/.tgscript $REQD_MEM

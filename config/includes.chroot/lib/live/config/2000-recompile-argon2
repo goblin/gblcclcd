@@ -1,0 +1,10 @@
+#! /bin/bash
+
+rm /usr/lib/libargon2* /usr/bin/argon2
+cd /root
+mkdir argon2
+cd argon2
+tar Jxf /usr/src/argon2.tar.xz
+make -j8
+make install
+

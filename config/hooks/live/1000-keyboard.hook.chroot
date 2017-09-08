@@ -1,0 +1,4 @@
+#! /bin/bash
+
+sed -i -e 's/XKBOPTIONS=""/XKBOPTIONS="ctrl:nocaps"/' /etc/default/keyboard
+dpkg-reconfigure --frontend=noninteractive keyboard-configuration
