@@ -1,0 +1,19 @@
+#! /bin/sh
+
+set -e
+
+# remove some docs, unlikely to be read by anyone
+rm -rf /usr/share/doc/lib*
+rm -rf /usr/share/doc/x11*
+rm -rf /usr/share/doc/xorg*
+rm -rf /usr/share/doc/xserver*
+
+# remove locales, they weigh 144M uncompressed and we all speak english ;-)
+rm -rf /usr/share/locale/*
+rm -rf /usr/share/i18n/*
+
+# remove non-english manuals
+find /usr/share/man -maxdepth 1 -not -name 'man*' -print0 | xargs -0 rm -rf
+
+# we don't even have `info` installed
+rm -rf /usr/share/info/*
