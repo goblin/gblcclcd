@@ -8,6 +8,7 @@ minimodem
 build-essential
 fakeroot
 devscripts
+git
 qrencode
 alsa-utils
 file
