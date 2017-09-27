@@ -1,0 +1,12 @@
+#! /bin/bash
+
+set -e
+
+cd /home/user
+
+EC_VERSION="2.9.3"
+
+wget https://electroncash.org/downloads/$EC_VERSION/win-linux/Electron-Cash-$EC_VERSION.tar.gz
+tar zxf Electron-Cash-$EC_VERSION.tar.gz
+rm Electron-Cash-$EC_VERSION.tar.gz
+

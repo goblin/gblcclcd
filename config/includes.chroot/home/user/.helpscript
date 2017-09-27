@@ -8,11 +8,12 @@ do
 	echo Ctrl-Alt-t opens a new terminal window
 	echo
 	echo available software: bitcoin bx electrum ethereumwallet mist zcash 
-	echo "   " mcrypt ssss minimodem qrencode flac mpv par2 argon2
+	echo "   " mcrypt ssss minimodem 'quiet_{en,de}code_*' qrencode 
+	echo "   " flac mpv par2 argon2
 	echo "   " treasure_goblin electrumize-seed ele_seed21st
 	echo "   " eth_cksum eth_mewseed21st sha3/keccak
-	echo "   " rdbl_enc rdbl_dec hexxor zcash-addr
-	echo "   " MyEtherWallet "(via menu)"
+	echo "   " rdbl_enc rdbl_dec hexxor zcash-addrgen
+	echo "   " MyEtherWallet "(via menu)", "Electron Cash (in home)"
 
 	bash
 
