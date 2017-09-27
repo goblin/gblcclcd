@@ -33,3 +33,4 @@ unzip
 zstd
 xclip
 parallel
+dosfstools
