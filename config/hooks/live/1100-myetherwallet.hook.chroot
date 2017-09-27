@@ -5,7 +5,7 @@ set -e
 mkdir -p /usr/local/share/mew
 cd /usr/local/share/mew
 
-MEW_VERSION="v3.10.2.9"
+MEW_VERSION="v3.10.3.9"
 
 wget https://github.com/kvhnuke/etherwallet/releases/download/"$MEW_VERSION"/etherwallet-"$MEW_VERSION".zip
 unzip etherwallet-"$MEW_VERSION".zip
