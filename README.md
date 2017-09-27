@@ -1,7 +1,8 @@
 Goblin's Crypto-Coin LiveCD
 
 This is a LiveCD with a lot of useful crypto-coin related software.
-Currently considered crypto-coins are Bitcoin, Ethereum and Zcash.
+Currently considered crypto-coins are Bitcoin, Ethereum, Zcash
+and Bitcoin Cash.
 
 It's meant to be helpful in cold storage scenarios, but it can
 also be helpful when online.
@@ -22,3 +23,7 @@ cd gblcclcd
 sudo apt-get install live-build live-config
 sudo lb build
 ```
+
+DISCLAIMER
+This live CD contains highly experimental software. NO WARRANTY is
+provided whatsoever. Use at your own risk.
