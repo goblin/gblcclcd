@@ -36,3 +36,5 @@ xclip
 parallel
 dosfstools
 sox
+gvfs
+gvfs-backends
